@@ -13,7 +13,7 @@ void loop() {
   // put your main code here, to run repeatedly:
   if (Serial.available()){
     buffer = (char) Serial.read();
-
+    delay(500);
     if (buffer == NUMBER_1){
       Serial.printf("Hello 1\n");
     } else if (buffer == NUMBER_2)
